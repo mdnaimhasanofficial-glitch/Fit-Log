@@ -1,9 +1,11 @@
-
+import Banner from "./components/Banner";
+import Library from "./components/Library"; // আপনার প্রজেক্টের সঠিক পাথ অনুযায়ী ইমপোর্ট করুন
 
 export default function Home() {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Banner />
+      <Library />
     </div>
   );
 }

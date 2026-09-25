@@ -1,3 +1,5 @@
+
+import Link from "next/link";
 import Image from "next/image";
 
 const Banner = () => {
@@ -23,9 +25,12 @@ const Banner = () => {
           </p>
 
           {/* Action Button */}
-          <button className="bg-[#ccff00] hover:bg-[#b3e600] text-black font-extrabold text-xs tracking-wider uppercase px-6 py-3.5 rounded-lg transition-colors">
+
+          <Link href="/workouts">
+            <button className="bg-[#ccff00] hover:bg-[#b3e600] text-black font-extrabold text-xs tracking-wider uppercase px-6 py-3.5 rounded-lg transition-colors">
             BROWSE WORKOUTS
-          </button>
+            </button>
+          </Link>
         </div>
 
         {/* Right Side: Image */}
