@@ -11,9 +11,9 @@ FitLog একটি আধুনিক, রেসপন্সিভ এবং �
 - **ফ্রেমওয়ার্ক:** [Next.js](https://nextjs.org/) (App Router)
 - **লাইব্রেরি:** [React](https://reactjs.org/) & [TypeScript](https://www.typescriptlang.org/)
 - **স্টাইলিং:** [Tailwind CSS](https://tailwindcss.org/)
-- **আইকন ও নোটিফিকেশন:** `react-icons`, `react-toastify` / `react-hot-toast`
+- **আইকন ও নোটিফিকেশন:** `react-icons`, `react-toastify`
 - **স্টেট ম্যানেজমেন্ট:** React Context API (`ExerciseContext`)
-- **ফন্ট ও ইউএক্স:** Google Fonts (`Geist Sans` & `Geist Mono`), Next.js Image Optimization
+- Next.js Image Optimization   :   DaisyUI
 
 ---
 
