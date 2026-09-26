@@ -52,9 +52,8 @@ const DeleteCard = ({ item, activeTab, onDelete, onMarkAsDone }: DeleteCardProps
         </div>
       </div>
 
-      {/* Right side: Action Buttons */}
       <div className="flex items-center gap-3 self-end md:self-center shrink-0">
-        {/* শুধুমাত্র Today's Plan-এ "Mark as Done" বাটন দেখাবে */}
+       
         {activeTab === 'today' && onMarkAsDone && (
           <button
             onClick={() => onMarkAsDone(item.id)}

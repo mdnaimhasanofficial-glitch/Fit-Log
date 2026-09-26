@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import "react-toastify/dist/ReactToastify.css"; // Toastify-এর CSS যুক্ত করা হলো
+import "react-toastify/dist/ReactToastify.css"; 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ExerciseProvider from "./context/ExerciseContext";
-import { ToastContainer } from "react-toastify";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

@@ -1,8 +1,8 @@
 import { IExercise } from "@/app/type";
 import Image from "next/image";
 import React from "react";
-// import SavedButton from "@/app/actionButton/SavedButton";
-// import TodayButton from "@/app/actionButton/ActionButton";
+import SavedButton from "@/app/actionButton/SavedButton";
+import TodayButton from "@/app/actionButton/ActionButton";
 
 
 
@@ -153,8 +153,8 @@ const WorkoutPage = async ({ params }: WorkoutPageProps) => {
     
           <div className="flex flex-wrap gap-3 pt-2">
 
-            {/* <TodayButton  workoutData = {workoutData}/>
-            <SavedButton workoutData={workoutData}/> */}
+            <TodayButton  workoutData = {workoutData}/>
+            <SavedButton workoutData={workoutData}/>
           </div>
         </div>
       </div>
