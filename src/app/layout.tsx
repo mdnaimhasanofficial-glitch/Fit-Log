@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "react-toastify/dist/ReactToastify.css"; // Toastify-এর CSS যুক্ত করা হলো
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ExerciseProvider from "./context/ExerciseContext";
 import { ToastContainer } from "react-toastify";
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,9 +17,27 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Perfect SEO & Dynamic Title Metadata
 export const metadata: Metadata = {
-  title: "FitLog",
-  description: "Workout library and fitness tracker",
+  title: {
+    default: "FitLog | Workout Library & Fitness Tracker",
+    template: "%s | FitLog",
+  },
+  description:
+    "Track your workouts, organize daily exercise plans, and calculate calories burned with FitLog — developed by Naim.",
+  keywords: ["Fitness Tracker", "Workout Library", "Exercise Planner", "FitLog"],
+  authors: [{ name: "Naim" }],
+  creator: "Naim",
+  openGraph: {
+    title: "FitLog | Workout Library & Fitness Tracker",
+    description: "Track your workouts, organize daily exercise plans, and calculate calories burned with FitLog.",
+    type: "website",
+    locale: "en_US",
+    siteName: "FitLog",
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -34,11 +52,21 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[#0b0c10] text-white">
         <ExerciseProvider>
-          <ToastContainer position="top-right" autoClose={3000} theme="dark" />
+          {/* Toast Container Settings */}
+          <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+          />
           <Navbar />
-          <main className="flex-1">
-            {children}
-          </main>
+          <main className="flex-1">{children}</main>
           <Footer />
         </ExerciseProvider>
       </body>
