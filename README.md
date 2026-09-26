@@ -13,7 +13,7 @@ FitLog একটি আধুনিক, রেসপন্সিভ এবং �
 - **স্টাইলিং:** [Tailwind CSS](https://tailwindcss.org/)
 - **আইকন ও নোটিফিকেশন:** `react-icons`, `react-toastify`
 - **স্টেট ম্যানেজমেন্ট:** React Context API (`ExerciseContext`)
-- Next.js Image Optimization   :   DaisyUI
+- Next.js Image Optimization    &&    DaisyUI
 
 ---
 
