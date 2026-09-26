@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏋️‍♂️ FitLog — ওয়ার্কআউট লাইব্রেরি ও ফিটনেস ট্র্যাকার
 
-## Getting Started
+FitLog একটি আধুনিক, রেসপন্সিভ এবং ইউজার-ফ্রেন্ডলি ওয়েব অ্যাপ্লিকেশন। ফিটনেস উৎসাহীদের নতুন ব্যায়াম (Exercises) খুঁজে পেতে, দৈনন্দিন ওয়ার্কআউট প্ল্যান গুছিয়ে রাখতে, ব্যায়ামের সময় হিসাব করতে এবং ক্যালোরি বার্ন ট্র্যাকিং সহজ করতে এটি তৈরি করা হয়েছে।
 
-First, run the development server:
+ডেভেলপ করেছেন: **Naim**
+
+---
+
+## 🚀 ব্যবহৃত টেকনোলজি (Technologies Used)
+
+- **ফ্রেমওয়ার্ক:** [Next.js](https://nextjs.org/) (App Router)
+- **লাইব্রেরি:** [React](https://reactjs.org/) & [TypeScript](https://www.typescriptlang.org/)
+- **স্টাইলিং:** [Tailwind CSS](https://tailwindcss.org/)
+- **আইকন ও নোটিফিকেশন:** `react-icons`, `react-toastify` / `react-hot-toast`
+- **স্টেট ম্যানেজমেন্ট:** React Context API (`ExerciseContext`)
+- **ফন্ট ও ইউএক্স:** Google Fonts (`Geist Sans` & `Geist Mono`), Next.js Image Optimization
+
+---
+
+## ⭐ প্রধান ৫টি ফিচার (Key Features)
+
+1. **📋 ডুয়াল-ট্যাব ওয়ার্কআউট প্ল্যানার (Today's Plan & Saved):**
+   খুব সহজেই আজকের ব্যায়ামের তালিকা (`Today's Plan`) এবং পরবর্তীতে করার জন্য সেভ করে রাখা তালিকার (`Saved`) মধ্যে সুইচ করা যায় এবং প্রতিটির আইটেম সংখ্যা সরাসরি দেখা যায়।
+
+2. **📊 লাইভ ফিটনেস অ্যানালিটিক্স ড্যাশবোর্ড:**
+   পরিকল্পনা করা মোট ব্যায়ামের সংখ্যা, ব্যায়ামের মোট সময় (Minutes) এবং আনুমানিক মোট বার্ন হওয়া ক্যালোরি (Calories) রিয়েল-টাইমে হিসাব করে ড্যাশবোর্ডে দেখায়।
+
+3. **🔀 স্মার্ট ফিল্টারিং ও সর্টিং (Multi-Attribute Sorting):**
+   নিজের পছন্দমতো সময়কাল (`Duration`), ক্যালোরি (`Calories`), কিংবা রেটিং (`Rating`) অনুযায়ী যেকোনো সময় ব্যায়ামের তালিকা সাজিয়ে (Sort) নেওয়া যায়।
+
+4. **✅ ওয়ার্কআউট ট্র্যাকিং ও অ্যাকশন কন্ট্রোল:**
+   কার্ডের মধ্যে থাকা অপশন ব্যবহার করে কোনো ব্যায়াম শেষ হলে `Mark as Done` করা যায়, যা কার্ডের কালার পরিবর্তন করে দেয়। পাশাপাশি খুব সহজে রিমুভ (Delete) করা বা ডিটেইলস পেজ (View Details) দেখার সুযোগ রয়েছে।
+
+5. **🔔 রিয়েল-টাইম টোস্ট নোটিফিকেশন:**
+   কোনো ব্যায়াম নতুন যুক্ত করলে, মুছে ফেললে কিংবা একই ব্যায়াম দ্বিতীয়বার যুক্ত করতে গেলে সঙ্গে সঙ্গে চমৎকার ভিজ্যুয়াল ফিডব্যাক ও টোস্ট (Toast Alert) বার্তা দেখায়।
+
+---
+
+## 🛠️ কিভাবে প্রজেক্টটি রান করবেন (Getting Started)
+
+প্রথমে প্রজেক্টটি ক্লোন করুন এবং ডিপেনডেন্সি ইনস্টল করুন:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone [https://github.com/your-username/fitlog.git](https://github.com/your-username/fitlog.git)
+cd fitlog
+npm install
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ai diye sundor kre guciye neya hoyece....
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Alhamdulilah
