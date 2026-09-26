@@ -8,8 +8,8 @@ const ExerciseCard = ({ item }: { item: IExercise }) => {
       <div>
         <div className="relative w-full h-52 rounded-xl overflow-hidden mb-4 bg-gray-900">
           <Image
-            src={item.image}
-            alt={item.name}
+            src={item?.image}
+            alt={item?.name}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover hover:scale-105 transition-transform duration-300"
@@ -17,7 +17,7 @@ const ExerciseCard = ({ item }: { item: IExercise }) => {
         </div>
 
         <div className="flex flex-wrap gap-2 mb-3">
-          {item.muscleGroups?.map((group, index) => (
+          {item?.muscleGroups?.map((group, index) => (
             <span
               key={index}
               className="bg-[#ccff00] text-black font-extrabold text-[10px] tracking-wider uppercase px-2.5 py-0.5 rounded-full"
@@ -28,17 +28,17 @@ const ExerciseCard = ({ item }: { item: IExercise }) => {
         </div>
 
         <h3 className="text-lg font-black tracking-wide uppercase text-white mb-1">
-          {item.name}
+          {item?.name}
         </h3>
-        <p className="text-xs text-gray-400 mb-4">{item.equipment}</p>
+        <p className="text-xs text-gray-400 mb-4">{item?.equipment}</p>
       </div>
 
       <div className="flex items-center gap-2 text-xs text-gray-400 border-t border-gray-800/80 pt-3 mt-2">
-        <span>{item.duration} min</span>
+        <span>{item?.duration} min</span>
         <span>•</span>
-        <span>{item.caloriesBurned} kcal</span>
+        <span>{item?.caloriesBurned} kcal</span>
         <span>•</span>
-        <span>★ {item.rating}</span>
+        <span>★ {item?.rating}</span>
       </div>
     </div>
   );
