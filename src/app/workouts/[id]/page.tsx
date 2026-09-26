@@ -1,7 +1,9 @@
 import { IExercise } from "@/app/type";
 import Image from "next/image";
 import React from "react";
-import { Bookmark, PlusCircle } from "lucide-react";
+import SavedButton from "@/app/actionButton/SavedButton";
+import TodayButton from "@/app/actionButton/ActionButton";
+
 
 
 
@@ -40,7 +42,7 @@ const WorkoutPage = async ({ params }: WorkoutPageProps) => {
     <section className="bg-[#0b0c10] text-white min-h-screen py-8 px-4 md:px-12 font-sans">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
         {/* Left Side: Exercise Image */}
-        <div className="relative w-full h-[380px] sm:h-[480px] lg:h-[540px] rounded-3xl overflow-hidden bg-gray-900 border border-gray-800/60 shadow-2xl">
+        <div className="relative w-full h-95 sm:h-120 lg:h-135 rounded-3xl overflow-hidden bg-gray-900 border border-gray-800/60 shadow-2xl">
           <Image
             src={workoutData.image}
             alt={workoutData.name}
@@ -150,14 +152,9 @@ const WorkoutPage = async ({ params }: WorkoutPageProps) => {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-3 pt-2">
-            <button className="flex items-center gap-2 bg-[#d4ff00] hover:bg-[#b8e600] text-black font-extrabold text-xs uppercase px-5 py-3 rounded-xl transition-all duration-200">
-              <PlusCircle className="w-4 h-4" />
-              Add to today&apos;s plan
-            </button>
-            <button className="flex items-center gap-2 bg-[#181a20] hover:bg-gray-800 text-white font-bold text-xs border border-gray-700/80 px-5 py-3 rounded-xl transition-all duration-200">
-              <Bookmark className="w-4 h-4" />
-              Save for later
-            </button>
+            {/* Action Button */}
+            <TodayButton  workoutData = {workoutData}/>
+            <SavedButton workoutData={workoutData}/>
           </div>
         </div>
       </div>

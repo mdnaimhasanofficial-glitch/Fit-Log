@@ -12,4 +12,5 @@ export interface IExercise {
     rating: number;
     description: string;
     instructions: string[];
+    isCompleted?: boolean;
 }
