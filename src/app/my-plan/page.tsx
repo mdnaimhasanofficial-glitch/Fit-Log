@@ -4,7 +4,7 @@ import React, { useContext, useState } from 'react';
 import { ExerciseContext } from '../context/ExerciseContext';
 import { IExercise } from '../type';
 import DeleteCard from '../DeleteCard/DeleteCard';
-import { ToastContainer } from 'react-toastify';
+
 
 
 export default function MyPlanContent() {
@@ -49,10 +49,10 @@ export default function MyPlanContent() {
 
   return (
     <div className="space-y-8 pt-10 bg-[#12141c] text-white min-h-screen">
-      {/* Toast Notification Container */}
-      <ToastContainer position="bottom-right" />
+    
+      
 
-      {/* Top Stats Box */}
+    
       <div className="border container mx-auto border-zinc-800/80 p-8 md:p-10 rounded-2xl grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 relative">
         <div className="flex flex-col justify-center pr-0 md:pr-8">
           <span className="text-zinc-400 text-xs font-semibold uppercase tracking-wider mb-2">

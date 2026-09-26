@@ -1,8 +1,8 @@
 import { IExercise } from "@/app/type";
 import Image from "next/image";
 import React from "react";
-import SavedButton from "@/app/actionButton/SavedButton";
-import TodayButton from "@/app/actionButton/ActionButton";
+// import SavedButton from "@/app/actionButton/SavedButton";
+// import TodayButton from "@/app/actionButton/ActionButton";
 
 
 
@@ -16,7 +16,7 @@ interface WorkoutPageProps {
 
 
 const getLibraryData = async (): Promise<IExercise[]> => {
-  const res = await fetch("https://api.abcz.workers.dev/api/fitlog", {
+  const res = await fetch(`https://api.api-store.workers.dev/api/fitlog`, {
     cache: "no-store",
   });
   const data = await res.json();
@@ -41,7 +41,7 @@ const WorkoutPage = async ({ params }: WorkoutPageProps) => {
   return (
     <section className="bg-[#0b0c10] text-white min-h-screen py-8 px-4 md:px-12 font-sans">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-        {/* Left Side: Exercise Image */}
+
         <div className="relative w-full h-95 sm:h-120 lg:h-135 rounded-3xl overflow-hidden bg-gray-900 border border-gray-800/60 shadow-2xl">
           <Image
             src={workoutData.image}
@@ -53,9 +53,9 @@ const WorkoutPage = async ({ params }: WorkoutPageProps) => {
           />
         </div>
 
-        {/* Right Side: Details */}
+   
         <div className="flex flex-col gap-6">
-          {/* Header & Badges */}
+
           <div>
             <h1 className="text-3xl sm:text-4xl font-black uppercase tracking-wide text-white mb-2">
               {workoutData.name}
@@ -75,7 +75,7 @@ const WorkoutPage = async ({ params }: WorkoutPageProps) => {
             </div>
           </div>
 
-          {/* Stats List Box */}
+
           <div className="bg-[#12141a] rounded-2xl p-5 border border-gray-800/80 divide-y divide-gray-800/60 text-xs">
             <div className="flex justify-between py-2.5">
               <span className="text-gray-400 uppercase tracking-wider font-semibold">
@@ -135,7 +135,7 @@ const WorkoutPage = async ({ params }: WorkoutPageProps) => {
             </div>
           </div>
 
-          {/* Instructions */}
+      
           <div>
             <h3 className="text-sm font-black uppercase tracking-wider text-white mb-3">
               INSTRUCTIONS
@@ -150,11 +150,11 @@ const WorkoutPage = async ({ params }: WorkoutPageProps) => {
             </ol>
           </div>
 
-          {/* Action Buttons */}
+    
           <div className="flex flex-wrap gap-3 pt-2">
-            {/* Action Button */}
-            <TodayButton  workoutData = {workoutData}/>
-            <SavedButton workoutData={workoutData}/>
+
+            {/* <TodayButton  workoutData = {workoutData}/>
+            <SavedButton workoutData={workoutData}/> */}
           </div>
         </div>
       </div>

@@ -94,7 +94,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Center: Navigation Pill Tabs (Active Style Dynamically Handled) */}
+         
           <div className="navbar-center hidden lg:flex">
             <nav className="flex items-center p-1 rounded-full bg-zinc-900/90 border border-zinc-800/80 shadow-inner">
               <Link
@@ -120,7 +120,7 @@ const Navbar = () => {
             </nav>
           </div>
 
-          {/* Right side: Dynamic Plan and Saved Counters */}
+          
           <div className="navbar-end w-auto flex items-center gap-4 sm:gap-6">
             <Link
               href="/my-plan"
