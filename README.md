@@ -1,52 +1,46 @@
-# 🏋️‍♂️ FitLog — ওয়ার্কআউট লাইব্রেরি ও ফিটনেস ট্র্যাকার
+# 🏋️‍♂️ FitLog — Workout Library & Fitness Tracker
 
-FitLog একটি আধুনিক, রেসপন্সিভ এবং ইউজার-ফ্রেন্ডলি ওয়েব অ্যাপ্লিকেশন। ফিটনেস উৎসাহীদের নতুন ব্যায়াম (Exercises) খুঁজে পেতে, দৈনন্দিন ওয়ার্কআউট প্ল্যান গুছিয়ে রাখতে, ব্যায়ামের সময় হিসাব করতে এবং ক্যালোরি বার্ন ট্র্যাকিং সহজ করতে এটি তৈরি করা হয়েছে।
+FitLog is a modern, responsive, and intuitive web application designed to help fitness enthusiasts discover exercises, organize daily workout routines, track active minutes, and monitor estimated calorie burn effortlessly.
 
-ডেভেলপ করেছেন: **Naim**
-
----
-
-## 🚀 ব্যবহৃত টেকনোলজি (Technologies Used)
-
-- **ফ্রেমওয়ার্ক:** [Next.js](https://nextjs.org/) (App Router)
-- **লাইব্রেরি:** [React](https://reactjs.org/) & [TypeScript](https://www.typescriptlang.org/)
-- **স্টাইলিং:** [Tailwind CSS](https://tailwindcss.org/)
-- **আইকন ও নোটিফিকেশন:** `react-icons`, `react-toastify`
-- **স্টেট ম্যানেজমেন্ট:** React Context API (`ExerciseContext`)
-- Next.js Image Optimization    &&    DaisyUI
+Developed with passion by **Naim**.
 
 ---
 
-## ⭐ প্রধান ৫টি ফিচার (Key Features)
+## 🚀 Technologies Used
 
-1. **📋 ডুয়াল-ট্যাব ওয়ার্কআউট প্ল্যানার (Today's Plan & Saved):**
-   খুব সহজেই আজকের ব্যায়ামের তালিকা (`Today's Plan`) এবং পরবর্তীতে করার জন্য সেভ করে রাখা তালিকার (`Saved`) মধ্যে সুইচ করা যায় এবং প্রতিটির আইটেম সংখ্যা সরাসরি দেখা যায়।
-
-2. **📊 লাইভ ফিটনেস অ্যানালিটিক্স ড্যাশবোর্ড:**
-   পরিকল্পনা করা মোট ব্যায়ামের সংখ্যা, ব্যায়ামের মোট সময় (Minutes) এবং আনুমানিক মোট বার্ন হওয়া ক্যালোরি (Calories) রিয়েল-টাইমে হিসাব করে ড্যাশবোর্ডে দেখায়।
-
-3. **🔀 স্মার্ট ফিল্টারিং ও সর্টিং (Multi-Attribute Sorting):**
-   নিজের পছন্দমতো সময়কাল (`Duration`), ক্যালোরি (`Calories`), কিংবা রেটিং (`Rating`) অনুযায়ী যেকোনো সময় ব্যায়ামের তালিকা সাজিয়ে (Sort) নেওয়া যায়।
-
-4. **✅ ওয়ার্কআউট ট্র্যাকিং ও অ্যাকশন কন্ট্রোল:**
-   কার্ডের মধ্যে থাকা অপশন ব্যবহার করে কোনো ব্যায়াম শেষ হলে `Mark as Done` করা যায়, যা কার্ডের কালার পরিবর্তন করে দেয়। পাশাপাশি খুব সহজে রিমুভ (Delete) করা বা ডিটেইলস পেজ (View Details) দেখার সুযোগ রয়েছে।
-
-5. **🔔 রিয়েল-টাইম টোস্ট নোটিফিকেশন:**
-   কোনো ব্যায়াম নতুন যুক্ত করলে, মুছে ফেললে কিংবা একই ব্যায়াম দ্বিতীয়বার যুক্ত করতে গেলে সঙ্গে সঙ্গে চমৎকার ভিজ্যুয়াল ফিডব্যাক ও টোস্ট (Toast Alert) বার্তা দেখায়।
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Library:** [React](https://reactjs.org/) & [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.org/)
+- **Icons & Notifications:** `react-icons`, `react-toastify` / `react-hot-toast`
+- **State Management:** React Context API (`ExerciseContext`)
+- **Fonts & UX:** Google Fonts (`Geist Sans` & `Geist Mono`), Next.js Image Optimization
 
 ---
 
-## 🛠️ কিভাবে প্রজেক্টটি রান করবেন (Getting Started)
+## ⭐ Key Features
 
-প্রথমে প্রজেক্টটি ক্লোন করুন এবং ডিপেনডেন্সি ইনস্টল করুন:
+1. **📋 Dual-Tab Workout Planner (Today's Plan & Saved Lists):**
+   Seamlessly switch between your daily scheduled routines and saved favorite exercises with real-time exercise count indicators.
+
+2. **📊 Live Fitness Analytics Dashboard:**
+   Automatically calculates and displays overall metrics, including total planned exercises, total active workout minutes, and estimated calories burned in real-time.
+
+3. **🔀 Smart Multi-Attribute Sorting:**
+   Sort your exercise lists instantly based on personal preferences using criteria like **Duration**, **Calories Burned**, or **Ratings**.
+
+4. **✅ Progress Tracking with Dynamic Action Controls:**
+   Interactive card controls allow you to mark exercises as completed (`Mark as Done`), changing the visual layout and providing feedback, alongside quick dynamic navigation to detailed exercise views.
+
+5. **🔔 Real-time Feedback & Toast Notifications:**
+   Provides instant visual feedback and toast alerts when adding exercises, preventing duplicates, or deleting items from your routine.
+
+---
+
+## 🛠️ Getting Started
+
+First, clone the repository and install the dependencies:
 
 ```bash
 git clone [https://github.com/your-username/fitlog.git](https://github.com/your-username/fitlog.git)
 cd fitlog
 npm install
-
-
-
-ai diye sundor kre guciye neya hoyece....
-
-Alhamdulilah
